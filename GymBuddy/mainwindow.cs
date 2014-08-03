@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GymBuddy
 {
-    public partial class Form1 : Form
+    public partial class mainwindow : Form
     {
-        public Form1()
+        public mainwindow()
         {
             InitializeComponent();
 
@@ -26,8 +26,9 @@ namespace GymBuddy
         {
             string reps = repsBox.Text;
             string exer = exerBox.Text;
-            Exercise ex = new Exercise(reps, exer);
-            Console.WriteLine(exer);
+            Exercise ex = new Exercise(exer, reps);
+            Announcer.Text = "Added new exercise: " + ex.ToString() + "!";
+            Console.WriteLine(ex);
         }
 
         private void exerBox_TextChanged(object sender, EventArgs e)

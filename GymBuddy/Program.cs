@@ -16,7 +16,7 @@ namespace GymBuddy
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Form1 form = new Form1();
+            mainwindow form = new mainwindow();
             Application.Run(form);
 
         }

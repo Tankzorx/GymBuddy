@@ -1,6 +1,6 @@
 ﻿namespace GymBuddy
 {
-    partial class Form1
+    partial class mainwindow
     {
         /// <summary>
         /// Required designer variable.
@@ -32,8 +32,9 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.exerBox = new System.Windows.Forms.TextBox();
             this.repsBox = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.exerLabel = new System.Windows.Forms.Label();
+            this.repsLabel = new System.Windows.Forms.Label();
+            this.Announcer = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // addExercise
@@ -73,36 +74,44 @@
             this.repsBox.TabIndex = 3;
             this.repsBox.TextChanged += new System.EventHandler(this.repsBox_TextChanged);
             // 
-            // label1
+            // exerLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(207, 45);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Exercise";
+            this.exerLabel.AutoSize = true;
+            this.exerLabel.Location = new System.Drawing.Point(207, 45);
+            this.exerLabel.Name = "exerLabel";
+            this.exerLabel.Size = new System.Drawing.Size(47, 13);
+            this.exerLabel.TabIndex = 4;
+            this.exerLabel.Text = "Exercise";
             // 
-            // label2
+            // repsLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(323, 45);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(32, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Reps";
+            this.repsLabel.AutoSize = true;
+            this.repsLabel.Location = new System.Drawing.Point(323, 45);
+            this.repsLabel.Name = "repsLabel";
+            this.repsLabel.Size = new System.Drawing.Size(32, 13);
+            this.repsLabel.TabIndex = 5;
+            this.repsLabel.Text = "Reps";
             // 
-            // Form1
+            // Announcer
+            // 
+            this.Announcer.Location = new System.Drawing.Point(12, 284);
+            this.Announcer.Name = "Announcer";
+            this.Announcer.Size = new System.Drawing.Size(925, 20);
+            this.Announcer.TabIndex = 6;
+            // 
+            // mainwindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(954, 465);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(949, 316);
+            this.Controls.Add(this.Announcer);
+            this.Controls.Add(this.repsLabel);
+            this.Controls.Add(this.exerLabel);
             this.Controls.Add(this.repsBox);
             this.Controls.Add(this.exerBox);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.addExercise);
-            this.Name = "Form1";
+            this.Name = "mainwindow";
             this.Text = "GymBuddy";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -116,8 +125,9 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.TextBox exerBox;
         private System.Windows.Forms.TextBox repsBox;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label exerLabel;
+        private System.Windows.Forms.Label repsLabel;
+        private System.Windows.Forms.TextBox Announcer;
     }
 }
 

@@ -16,5 +16,13 @@ namespace GymBuddy
             this.reps = reps;
 
         }
+
+        public string ToString() 
+        {
+            string exerStr = "";
+            exerStr += "Exercise: " + type + ".\n";
+            exerStr += "Reps: " + reps + ".";
+            return exerStr;
+        }
     }
 }
